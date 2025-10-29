@@ -4,9 +4,11 @@
     {
         public int CodigoSKU { get; set; }
         public string Nome { get; set; }
-        public string Categoria { get; set; } //perecivel ou nao (boolean)
-        public int PrecoUnitario { get; set; }
+        public bool Perecivel { get; set; } 
+        public decimal PrecoUnitario { get; set; }
+        public int EstoqueAtual { get; set; }
         public int QtdMin { get; set; }
-        public DateTime DataCriacao { get; set; }
+        public DateTime? DataValidade { get; set; } 
+        public DateTime DataCriacao { get; set; } = DateTime.Now;
     }
 }
