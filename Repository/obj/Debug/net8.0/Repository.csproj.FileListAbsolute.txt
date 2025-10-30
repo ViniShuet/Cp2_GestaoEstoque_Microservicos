@@ -1,0 +1,16 @@
+D:\cp2MWE\GestaoEstoquesln\Repository\bin\Debug\net8.0\Repository.deps.json
+D:\cp2MWE\GestaoEstoquesln\Repository\bin\Debug\net8.0\Repository.dll
+D:\cp2MWE\GestaoEstoquesln\Repository\bin\Debug\net8.0\Repository.pdb
+D:\cp2MWE\GestaoEstoquesln\Repository\bin\Debug\net8.0\Domain.dll
+D:\cp2MWE\GestaoEstoquesln\Repository\bin\Debug\net8.0\Domain.pdb
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\Repository.sourcelink.json
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\Repository.dll
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\refint\Repository.dll
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\Repository.pdb
+D:\cp2MWE\GestaoEstoquesln\Repository\obj\Debug\net8.0\ref\Repository.dll

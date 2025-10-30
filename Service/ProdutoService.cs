@@ -18,8 +18,6 @@ namespace Service
 
         public async Task<int> CadastrarProdutoAsync(Produto produto)
         {
-            if (produto.Perecivel && !produto.DataValidade.HasValue)
-                throw new Exception("Produto perecível precisa de data de validade.");
 
             if (!produto.Perecivel && produto.DataValidade.HasValue)
                 throw new Exception("Produto não perecível não deve ter data de validade.");
@@ -35,16 +33,27 @@ namespace Service
             return id;
         }
 
-        // Verificar produtos abaixo do mínimo
         public void VerificaEstoqueMinimo(Produto produto)
         {
             const int limite = 10;
             if (produto.QtdMin < limite)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine($"⚠️ Produto '{produto.Nome}' está abaixo do limite mínimo ({produto.QtdMin} < {limite})");
+                Console.WriteLine($" Produto '{produto.Nome}' está abaixo do limite mínimo ({produto.QtdMin} < {limite})");
                 Console.ResetColor();
             }
         }
+        public async Task<Produto> ObterPorIdAsync(int id)
+        {
+            return await _repository.ObterPorIdAsync(id);
+        }
+
+        public async Task<IEnumerable<Produto>> ListarProdutosAbaixoDoMinimoAsync()
+        {
+            var todos = await _repository.ObterTodosAsync();
+            return todos.Where(p => p.EstoqueAtual < p.QtdMin);
+        }
+
     }
 }
+
